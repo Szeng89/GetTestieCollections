@@ -16,5 +16,10 @@ public class PriorityQueueTest {
 
         Assert.assertEquals("Code", priorityQueue.peek());
         Assert.assertEquals("Code", priorityQueue.poll());
+
+        priorityQueue.poll();
+
+        Assert.assertEquals(priorityQueue.size(), 1);
+
     }
 }
